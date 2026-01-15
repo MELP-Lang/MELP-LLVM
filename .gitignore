@@ -1,0 +1,95 @@
+# MELP Compiler - Build Artifacts & Temporary Files
+
+# Compiled Object Files
+*.o
+*.a
+*.so
+*.dylib
+
+# LLVM IR Files (generated)
+*.ll
+*.bc
+
+# Assembly Files (generated)
+*.s
+*.asm
+
+# Executables (test binaries)
+test_*
+*_test
+demo_*
+*_demo
+stage0_compiler
+stage1_compiler
+stage2_compiler
+melp
+melpc
+
+# Build Directories
+build/
+bin/
+obj/
+target/
+dist/
+out/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.code-workspace
+
+# OS Specific
+Thumbs.db
+desktop.ini
+.DS_Store
+._*
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+.cache/
+
+# Test Output
+test_output/
+*.test.out
+test_results/
+
+# Runtime Generated
+*.log
+*.pid
+core
+core.*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.egg-info/
+.tox/
+venv/
+env/
+
+# Node (if used in scripts)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Documentation Build
+docs/_build/
+docs/.doctrees/
+*.html
+*.pdf
+
+# Personal Notes (should not be committed)
+NOTES.txt
+TODO.personal
+scratch/
+playground/
