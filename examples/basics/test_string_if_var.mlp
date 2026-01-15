@@ -1,0 +1,7 @@
+function main() as numeric
+    string x = "test"
+    if x == "test" then
+        print("OK")
+    end if
+    return 0
+end

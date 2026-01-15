@@ -1,0 +1,11 @@
+function main() as numeric
+    print("Testing: apple < banana")
+    
+    if "apple" < "banana" then
+        print("SUCCESS: Comparison returned TRUE")
+    else
+        print("FAILED: Comparison returned FALSE")
+    end if
+    
+    return 0
+end

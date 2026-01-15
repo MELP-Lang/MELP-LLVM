@@ -1,0 +1,17 @@
+function greet_first(string msg1) as numeric
+    print(msg1)
+    return 0
+end
+
+function greet_second(string msg2) as numeric
+    print(msg2)
+    return 0
+end
+
+function main() as numeric
+    string greeting1 = "Hello"
+    string greeting2 = "World"
+    numeric result1 = greet_first(greeting1)
+    numeric result2 = greet_second(greeting2)
+    return 0
+end

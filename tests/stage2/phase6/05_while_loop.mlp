@@ -1,0 +1,7 @@
+function main() as numeric
+    numeric x = 0
+    while x < 10
+        x = x + 1
+    end_while
+    return x
+end_function

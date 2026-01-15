@@ -1,0 +1,4 @@
+-- Test: Only return
+function main() as numeric
+    return 7
+end_function

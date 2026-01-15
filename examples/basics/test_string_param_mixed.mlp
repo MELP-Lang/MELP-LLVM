@@ -1,0 +1,11 @@
+function greet_mixed(string literal_msg, string var_msg) as numeric
+    print(literal_msg)
+    print(var_msg)
+    return 0
+end
+
+function main() as numeric
+    string name = "MELP"
+    numeric result = greet_mixed("Hello", name)
+    return 0
+end

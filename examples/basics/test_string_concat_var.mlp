@@ -1,0 +1,7 @@
+function main() as numeric
+    string greeting = "Hello"
+    string target = "World"
+    string message = greeting + target
+    print(message)
+    return 0
+end

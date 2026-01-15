@@ -1,0 +1,9 @@
+-- Test: Variable declaration and expressions
+-- Purpose: Test lexer/parser for variables and arithmetic
+
+function main() as numeric
+    var x as numeric = 10
+    var y as numeric = 20
+    var result as numeric = x + y * 2
+    return result
+end_function

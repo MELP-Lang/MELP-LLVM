@@ -1,0 +1,6 @@
+-- MLP Hello World Program
+-- Test for 26-module compiler
+
+print("Hello World!")
+print("MLP 26-module system is working!")
+print("Hello from MLP!")

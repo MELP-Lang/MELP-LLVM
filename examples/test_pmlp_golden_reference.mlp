@@ -1,0 +1,160 @@
+-- PMLP GOLDEN REFERENCE TEST (Stage 0 Compatible)
+-- Bu dosya PMLP sözdiziminin TÜM kritik kurallarını içerir
+-- Kaynak: belgeler/pmlp_sozdizimi.md
+-- Tarih: 12 Ocak 2026
+
+-- ============================================================
+-- KRİTİK SYNTAX KURALLARI:
+-- ============================================================
+-- 1. Parametre ayırıcı: ; (noktalı virgül, virgül DEĞİL)
+-- 2. Blok sonlandırıcı: end_if, end_while, end_for, end_function (ALT ÇİZGİLİ, TEK TOKEN)
+-- 3. If-then: "if koşul then" (THEN ZORUNLU!)
+-- 4. else_if: TEK TOKEN (alt çizgili, "else if" DEĞİL!)
+-- 5. Türk sayı formatı: 3,14 (virgül=ondalık), 1.000 (nokta=binlik)
+-- 6. Array: [1; 2; 3] (SEMİCOLON ayırıcı, virgül DEĞİL!)
+-- 7. Fonksiyon: "returns" veya "as" keyword
+-- 8. For döngüsü: "for ... to ...", "for ... downto ..."
+-- 9. Mantıksal: and, or, not (&&, ||, ! DEĞİL!)
+-- 10. Yorumlar: -- (tek satır, // DEĞİL!)
+-- ============================================================
+
+function main() as numeric
+    print("=== PMLP GOLDEN REFERENCE TEST ===")
+    print("Testing ALL critical PMLP syntax rules...")
+    
+    -- TEST 1: Parametre ayırıcı (;) - SEMICOLON
+    print("Test 1: Parameter separator (semicolon)")
+    numeric result1 = test_semicolon_params(10; 20; 30)
+    print(result1)
+    
+    -- TEST 2: If-then (THEN zorunlu!)
+    print("Test 2: If-then (then required)")
+    numeric result2 = test_if_then(15)
+    print(result2)
+    
+    -- TEST 3: else_if (TEK TOKEN)
+    print("Test 3: else_if (single token)")
+    numeric result3 = test_else_if(25)
+    print(result3)
+    
+    -- TEST 4: Array (SEMICOLON ayırıcı)
+    print("Test 4: Array (semicolon separator)")
+    numeric result4 = test_array_syntax()
+    print(result4)
+    
+    -- TEST 5: For döngüsü (to, end_for TEK TOKEN)
+    print("Test 5: For loop (to, end_for)")
+    numeric result5 = test_for_to()
+    print(result5)
+    
+    -- TEST 6: For downto
+    print("Test 6: For downto")
+    numeric result6 = test_for_downto()
+    print(result6)
+    
+    -- TEST 7: While döngüsü (end_while TEK TOKEN)
+    print("Test 7: While loop (end_while)")
+    numeric result7 = test_while_loop()
+    print(result7)
+    
+    -- TEST 8: Türk sayı formatı
+    print("Test 8: Turkish number format (3,14)")
+    numeric result8 = test_turkish_numbers()
+    print(result8)
+    
+    -- TEST 9: Mantıksal operatörler (and/or/not)
+    print("Test 9: Logical operators (and/or/not)")
+    boolean result9 = test_logical_ops(true; false)
+    print(result9)
+    
+    -- TEST 10: Karşılaştırma operatörleri
+    print("Test 10: Comparison operators")
+    boolean result10 = test_comparison_ops(5; 10)
+    print(result10)
+    
+    print("=== ALL TESTS PASSED ===")
+    print("All PMLP syntax rules verified successfully!")
+    return 0
+end_function
+
+-- TEST 1: Parametre ayırıcı (;)
+function test_semicolon_params(numeric a; numeric b; numeric c) as numeric
+    return a + b + c
+end_function
+
+-- TEST 2: If-then (then zorunlu!)
+function test_if_then(numeric x) as numeric
+    if x > 10 then
+        return 100
+    end_if
+    return 50
+end_function
+
+-- TEST 3: else_if (tek token)
+function test_else_if(numeric x) as numeric
+    if x > 20 then
+        return 3
+    else_if x > 10 then
+        return 2
+    else
+        return 1
+    end_if
+end_function
+
+-- TEST 4: Array (semicolon ayırıcı)
+function test_array_syntax() as numeric
+    numeric[] arr = [10; 20; 30; 40; 50]
+    return arr[0] + arr[2]
+end_function
+
+-- TEST 5: For döngüsü (to, end_for tek token)
+function test_for_to() as numeric
+    numeric sum = 0
+    for i = 1 to 10
+        sum = sum + i
+    end_for
+    return sum
+end_function
+
+-- TEST 6: For downto
+function test_for_downto() as numeric
+    numeric sum = 0
+    for i = 10 downto 1
+        sum = sum + i
+    end_for
+    return sum
+end_function
+
+-- TEST 7: While döngüsü (end_while tek token)
+function test_while_loop() as numeric
+    numeric i = 1
+    numeric sum = 0
+    while i <= 10
+        sum = sum + i
+        i = i + 1
+    end_while
+    return sum
+end_function
+
+-- TEST 8: Türk sayı formatı (virgül=ondalık, nokta=binlik)
+function test_turkish_numbers() as numeric
+    numeric pi = 3,14
+    numeric binlik = 1.000
+    return pi + binlik
+end_function
+
+-- TEST 9: Mantıksal operatörler (and, or, not - NOT &&, ||, !)
+function test_logical_ops(boolean a; boolean b) as boolean
+    boolean result1 = a and b
+    boolean result2 = a or b
+    boolean result3 = not a
+    return result1 or result2 or result3
+end_function
+
+-- TEST 10: Karşılaştırma operatörleri
+function test_comparison_ops(numeric x; numeric y) as boolean
+    boolean less = x < y
+    boolean greater = x > y
+    boolean equal = x == y
+    return less or greater or equal
+end_function

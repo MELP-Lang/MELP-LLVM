@@ -1,0 +1,5 @@
+function main() as numeric
+    print(100)
+    print(42)
+    return 0
+end_function

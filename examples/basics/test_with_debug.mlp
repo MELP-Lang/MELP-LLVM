@@ -1,0 +1,10 @@
+function main() as numeric
+    print("Starting test...")
+    if "apple" < "banana" then
+        print("OK - apple < banana")
+    else
+        print("FAIL - apple >= banana")
+    end if
+    print("Test complete")
+    return 0
+end

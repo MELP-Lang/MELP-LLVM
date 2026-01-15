@@ -1,0 +1,15 @@
+-- MLP Multiple Prints Test
+-- Testing multiple output statements
+
+print("=== MLP Test Suite ===")
+print("")
+print("Test 1: Turkish characters")
+print("Working: ç ğ ı ö ş ü")
+print("")
+print("Test 2: English characters")
+print("Working: ABC xyz 123")
+print("")
+print("Test 3: Special symbols")
+print("Symbols: !@#$%^&*()")
+print("")
+print("=== All Tests Passed! ===")

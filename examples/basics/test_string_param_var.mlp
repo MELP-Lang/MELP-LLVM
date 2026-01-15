@@ -1,0 +1,10 @@
+function greet(string msg) as numeric
+    print(msg)
+    return 0
+end
+
+function main() as numeric
+    string greeting = "Hello from variable"
+    numeric result = greet(greeting)
+    return 0
+end

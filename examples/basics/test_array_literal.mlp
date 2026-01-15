@@ -1,0 +1,9 @@
+-- YZ_74: Test basic array literal creation  
+-- Array with initialization: numeric[] arr = [1, 2, 3]
+
+function main() as numeric
+    numeric[] numbers = [10, 20, 30]
+    print("Array created with 3 elements")
+    return 0
+end
+

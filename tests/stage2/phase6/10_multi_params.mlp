@@ -1,0 +1,7 @@
+function sum_four(numeric a; numeric b; numeric c; numeric d) as numeric
+    return a + b + c + d
+end_function
+
+function main() as numeric
+    return sum_four(1; 2; 3; 4)
+end_function

@@ -1,0 +1,24 @@
+function main() as numeric
+    string password = "secret"
+    
+    if password == "secret" then
+        print("Test 1 PASS: Password matches")
+    else
+        print("Test 1 FAIL")
+    end if
+    
+    if password != "wrong" then
+        print("Test 2 PASS: Password is not wrong")
+    else
+        print("Test 2 FAIL")
+    end if
+    
+    string name = "MELP"
+    if name == "Python" then
+        print("Test 3 FAIL")
+    else
+        print("Test 3 PASS: Name is not Python")
+    end if
+    
+    return 0
+end

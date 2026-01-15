@@ -1,0 +1,9 @@
+function main() as numeric
+    if "apple" < "banana" then
+        print("CORRECT: apple < banana")
+    else
+        print("WRONG")
+    end if
+    
+    return 0
+end

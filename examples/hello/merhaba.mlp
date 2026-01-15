@@ -1,0 +1,4 @@
+-- hello.mlp file
+-- Simple hello world example
+--
+print("Hello World!!!")

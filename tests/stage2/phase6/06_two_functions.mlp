@@ -1,0 +1,8 @@
+function add(numeric a; numeric b) as numeric
+    return a + b
+end_function
+
+function main() as numeric
+    numeric result = add(10; 20)
+    return result
+end_function

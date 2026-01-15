@@ -1,0 +1,37 @@
+function main() as numeric
+    string user = "admin"
+    string pass = "secret123"
+    
+    if user == "admin" then
+        if pass == "secret123" then
+            print("Login successful")
+        else
+            print("Wrong password")
+        end if
+    else
+        print("User not found")
+    end if
+    
+    string a = "apple"
+    string b = "banana"
+    
+    if a < b then
+        print("apple comes before banana")
+    else
+        print("banana comes before apple")
+    end if
+    
+    if a > "aaa" then
+        print("apple is greater than aaa")
+    end if
+    
+    if b >= "banana" then
+        print("b equals banana")
+    end if
+    
+    if b <= "zebra" then
+        print("banana comes before zebra")
+    end if
+    
+    return 0
+end

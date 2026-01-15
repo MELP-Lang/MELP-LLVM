@@ -1,0 +1,7 @@
+-- Test: Super simple variable
+-- Purpose: Debug codegen
+
+function main() as numeric
+    var x as numeric = 5
+    return x
+end_function

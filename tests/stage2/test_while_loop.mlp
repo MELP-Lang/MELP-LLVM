@@ -1,0 +1,14 @@
+-- Test: While loop
+-- Purpose: Test loop parsing
+
+function main() as numeric
+    var i as numeric = 0
+    var sum as numeric = 0
+    
+    while i < 10
+        sum = sum + i
+        i = i + 1
+    end_while
+    
+    return sum
+end_function

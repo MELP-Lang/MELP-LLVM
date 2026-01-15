@@ -1,0 +1,6 @@
+function main() as numeric
+    if 1 < 2 then
+        print("OK")
+    end if
+    return 0
+end

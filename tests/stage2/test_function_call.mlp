@@ -1,0 +1,11 @@
+-- Test: Function with parameters
+-- Purpose: Test function calls and parameters
+
+function add(a as numeric; b as numeric) as numeric
+    return a + b
+end_function
+
+function main() as numeric
+    var result as numeric = add(10; 20)
+    return result
+end_function

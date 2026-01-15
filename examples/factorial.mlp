@@ -1,0 +1,18 @@
+-- Factorial example (iterative)
+function factorial(numeric n) as numeric
+    var numeric result
+    var numeric i
+    result = 1
+    i = 1
+    
+    while i <= n
+        result = result * i
+        i = i + 1
+    end_while
+    
+    return result
+end_function
+
+function main() as numeric
+    return factorial(10)
+end_function

@@ -1,0 +1,5 @@
+function main() as numeric
+    string message = "Hello" + "World"
+    print(message)
+    return 0
+end

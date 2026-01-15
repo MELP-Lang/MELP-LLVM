@@ -1,0 +1,10 @@
+function factorial(numeric n) as numeric
+    if n <= 1 then
+        return 1
+    end_if
+    return n * factorial(n - 1)
+end_function
+
+function main() as numeric
+    return factorial(5)
+end_function

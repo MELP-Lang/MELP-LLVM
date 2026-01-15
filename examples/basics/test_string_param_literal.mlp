@@ -1,0 +1,9 @@
+function greet(string msg) as numeric
+    print(msg)
+    return 0
+end
+
+function main() as numeric
+    numeric result = greet("Hello MELP")
+    return 0
+end

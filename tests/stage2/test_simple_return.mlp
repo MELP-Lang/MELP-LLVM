@@ -1,0 +1,6 @@
+-- Test: Simple return statement
+-- Purpose: Verify lexer and parser for minimal function
+
+function main() as numeric
+    return 42
+end_function

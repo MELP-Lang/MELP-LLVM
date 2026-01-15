@@ -1,0 +1,17 @@
+function is_even(numeric n) as numeric
+    if n == 0 then
+        return 1
+    end_if
+    return is_odd(n - 1)
+end_function
+
+function is_odd(numeric n) as numeric
+    if n == 0 then
+        return 0
+    end_if
+    return is_even(n - 1)
+end_function
+
+function main() as numeric
+    return is_even(4)
+end_function

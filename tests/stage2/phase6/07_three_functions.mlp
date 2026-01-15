@@ -1,0 +1,13 @@
+function add(numeric a; numeric b) as numeric
+    return a + b
+end_function
+
+function multiply(numeric a; numeric b) as numeric
+    return a * b
+end_function
+
+function main() as numeric
+    numeric sum = add(10; 20)
+    numeric product = multiply(sum; 2)
+    return product
+end_function

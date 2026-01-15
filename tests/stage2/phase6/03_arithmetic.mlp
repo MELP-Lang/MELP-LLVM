@@ -1,0 +1,4 @@
+function main() as numeric
+    numeric x = 10 + 20
+    return x
+end_function

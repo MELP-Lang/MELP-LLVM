@@ -1,0 +1,13 @@
+function main() as numeric
+    numeric x = 5
+    numeric y = 10
+    
+    print("Testing x < y (5 < 10)")
+    if x < y then
+        print("CORRECT: 5 < 10")
+    else
+        print("WRONG")
+    end if
+    
+    return 0
+end

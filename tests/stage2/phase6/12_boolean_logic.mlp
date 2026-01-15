@@ -1,0 +1,8 @@
+function main() as numeric
+    boolean a = true
+    boolean b = false
+    if a and not b then
+        return 1
+    end_if
+    return 0
+end_function

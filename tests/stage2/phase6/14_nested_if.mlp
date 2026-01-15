@@ -1,0 +1,11 @@
+function main() as numeric
+    numeric x = 10
+    if x > 0 then
+        if x > 5 then
+            return 2
+        end_if
+        return 1
+    else
+        return 0
+    end_if
+end_function

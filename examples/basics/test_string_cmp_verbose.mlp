@@ -1,0 +1,18 @@
+function test_string_cmp() as numeric
+    variable s1: string = "apple"
+    variable s2: string = "banana"
+    
+    print("Testing string comparison...")
+    
+    if s1 < s2 then
+        print("YES: apple < banana")
+        return 1
+    else
+        print("NO: apple >= banana")
+        return 0
+    end if
+end
+
+function main() as numeric
+    return test_string_cmp()
+end

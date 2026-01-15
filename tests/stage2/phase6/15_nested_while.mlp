@@ -1,0 +1,12 @@
+function main() as numeric
+    numeric x = 0
+    numeric y = 0
+    while x < 3
+        y = 0
+        while y < 3
+            y = y + 1
+        end_while
+        x = x + 1
+    end_while
+    return x
+end_function

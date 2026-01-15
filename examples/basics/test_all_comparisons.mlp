@@ -1,0 +1,23 @@
+function main() as numeric
+    print("Testing mlp_string_compare...")
+    
+    if "apple" == "apple" then
+        print("PASS: apple == apple")
+    else
+        print("FAIL: apple != apple")
+    end if
+    
+    if "apple" < "banana" then
+        print("PASS: apple < banana")
+    else
+        print("FAIL: apple >= banana")
+    end if
+    
+    if "banana" > "apple" then
+        print("PASS: banana > apple")
+    else
+        print("FAIL: banana <= apple")
+    end if
+    
+    return 0
+end

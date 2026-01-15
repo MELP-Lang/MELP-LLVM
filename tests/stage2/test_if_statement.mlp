@@ -1,0 +1,12 @@
+-- Test: If statement with expressions
+-- Purpose: Test control flow parsing
+
+function main() as numeric
+    var x as numeric = 10
+    
+    if x > 5 then
+        return 1
+    else
+        return 0
+    end_if
+end_function

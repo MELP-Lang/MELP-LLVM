@@ -1,0 +1,3 @@
+function main() as numeric
+    return x
+end_function
